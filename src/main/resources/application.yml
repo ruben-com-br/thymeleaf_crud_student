@@ -1,8 +1,11 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:mydb
-    username: user
-    password: password
+    url: jdbc:h2:mem:todolist
     driverClassName: org.h2.Driver
+    username: admin
+    password: admin
   jpa:
-    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
